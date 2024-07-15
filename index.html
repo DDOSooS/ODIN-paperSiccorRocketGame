@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <div class="wrapper">
+            <h2 class="game-header">
+                Rock paper scissors
+            </h2>
+        </div>
+        <div class="game-board">
+            <div class="first-player" data-choice="0">
+                <img src="./scissors.png" id="" class="fstPlayer" alt="">
+            </div>
+            <div class="game-score">
+                <p class="player">player</p>
+                <div class="score">
+                    <div id="playerScore">0</div> - <div id="machineScore">0</div>
+                </div>
+                <div class="machine">Computer</div>
+                <div class="timer"></div>
+            </div>
+            <div class="second-player" data-choice="0">
+                <img src="" class="scdPlayer" id="" alt="">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="player_choice">
+                <div class="choices">
+                    <img src="./paper.png" alt="" onclick="changeUserChoice(0)" id="0">
+                </div>
+                <div class="choices">
+                    <img src="./rock.png" alt="" onclick="changeUserChoice(1)" id="1">
+                </div>
+                <div class="choices">
+                    <img src="scissors.png" alt="" onclick="changeUserChoice(2)" id="2">
+                </div>
+            </div>
+        </div>
+        <button onclick="startTimer(5)">Start Timer</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
